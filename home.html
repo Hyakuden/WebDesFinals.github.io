@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Rush</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="introduction">
+            <h1>Welcome to the Silver Rush!</h1>
+        </div>
+        <!-- Product Section -->
+        <div class="products">
+            <div class="product">
+                <img src="C:\Users\DaniellePatag\Downloads\FO4_T-45_power_armor_hot_rod_flames.webp" alt="Power Armor 1">
+                <h2>T-45 Power Armor</h2>
+                <p>Price: $50000</p>
+                <button class="add-to-cart" data-name="T-45 Power Armor" data-price="50000">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\DaniellePatag\Downloads\FO4_T-51_Power_Armor.webp" alt="Power Armor 2">
+                <h2>T-51 Power Armor</h2>
+                <p>Price: $60000</p>
+                <button class="add-to-cart" data-name="T-51 Power Armor" data-price="60000">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\DaniellePatag\Downloads\FO4_T-60_power_armor_BOS_initiate.webp" alt="Power Armor 3">
+                <h2>T-60 Power Armor</h2>
+                <p>Price: $70000</p>
+                <button class="add-to-cart" data-name="T-60 Power Armor" data-price="70000">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\DaniellePatag\Downloads\FO4_X-01_power_armor_hot_rod_shark.webp" alt="Power Armor 4">
+                <h2>X-01 Power Armor</h2>
+                <p>Price: $100000</p>
+                <button class="add-to-cart" data-name="X-01 Power Armor" data-price="100000">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Checkout Section -->
+        <div class="checkout">
+            <h2>Checkout</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p>Total: $<span id="total">0</span></p>
+            <label for="amount">Enter Amount: $</label>
+            <input type="number" id="amount" min="0" step="0.01">
+            <button id="calculate-change">Calculate Change</button>
+            <p>Change: $<span id="change">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

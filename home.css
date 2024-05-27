@@ -1,0 +1,123 @@
+/* General styling for all pages */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8B0000; /* Red background */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.introduction h1 {
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Specific styling for home page */
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.checkout {
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    position: relative; /* To position the remove button */
+}
+
+#total,
+#change {
+    font-weight: bold;
+}
+
+#calculate-change {
+    margin-top: 10px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#calculate-change:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+button {
+    margin-left: 10px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: #FF0000; /* Red for remove button */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #CC0000; /* Darker red */
+}
